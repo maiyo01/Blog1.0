@@ -11,7 +11,13 @@
             * {
                 box-sizing: border-box;
             }
+            /* Style the body */
+            body{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                margin: 0;   
+            }
 
+            /* Header style*/
             header {
                 background-color: #666;
                 padding: 30px;
@@ -20,6 +26,7 @@
                 color: white;
             }
 
+            /* Style of the navigation bar */
             nav {
                 float: right;
                 width: 30%;
@@ -27,6 +34,31 @@
                 background: #ccc;
                 padding: 20px;
                 font-family: sans-serif;
+            }
+
+            /* Style of the navigation bar */
+            .navbar{
+                display: flex;
+                background-color: #333;
+            }
+
+            /* Style the navigation bar links*/
+            .navbar a{
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            /* Style for active link */
+            .navbar a.active{
+                background-color: aqua;
+                color:black;
+            }
+            /* Change color on hover*/
+            .navbar a:hover:not(.active){
+                background-color: #ddd;
+                color: black;
             }
 
             article {
@@ -48,16 +80,17 @@
 
     <body>
         <header>
-            <h2>Music Blog</h2>
+            <h2>Chir Blog</h2>
+            <p style="font-size:15px">Read all about Music...</p>
         </header>
         <section>
-            <nav>
-                <ul>
-                    <li><a href="#">HipHop</a></li>
-                    <li><a href="#">Kwaito</a></li>
-                    <li><a href="#">Kenyan</a></li>
-                </ul>
-            </nav>
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <a class="active" href="home.html">Home</a>
+                <a href="compose.html">Compose</a>
+                <a href="about.html">About</a>
+            </div>
+
             <article>
                 <h1>HipHop</h1>
                 <p>
