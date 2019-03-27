@@ -75,10 +75,32 @@
                 padding: 20px;
             }
 
+            /* Style of first textarea*/
+            .textarea1 {
+                width: 100%;
+                height: 45px;
+                padding: 12px 20px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                font-size: 14px;
+            }
+
+            /* Style for compose text area*/
+            .textarea2 {
+                width: 100%;
+                height: 500px;
+                padding: 12px 20px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                font-size: 14px;
+            }
+
             footer {
-                background-color: #666;
+                background-color: rgb(153, 44, 44);
                 text-align: center;
-                color: white;
+                color: black;
                 padding: 10px;
             }
         </style>
@@ -87,6 +109,7 @@
     <body>
         <header>
             <h2>Compose</h2>
+            <p style="font-size:15px">Read all about music...</p>
         </header>
         <!-- Navigation bar -->
         <div class="navbar">
@@ -98,9 +121,25 @@
         <!-- The flex grid content-->
         <div class="row">
             <div class="main">
-                <textarea rows="30" cols="12" required>
-            Write your blog here...
-            </textarea>
+                <p>Title:
+                    <textarea class="textarea1" required>
+
+                    </textarea></p>
+                <p>Title description:
+                    <textarea class="textarea1" required>
+
+                    </textarea>
+                </p>
+                <p>Add photo:
+                    <textarea class="textarea1" required>
+
+                    </textarea>
+                </p>
+                <p>Compose:
+                    <textarea class="textarea2">
+
+                    </textarea>
+                </p>
                 <form action="home.html">
                     <input type="submit" value="submit">
                 </form>
