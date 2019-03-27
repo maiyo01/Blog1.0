@@ -55,6 +55,26 @@
                 color: black;
             }
 
+            /* Column container*/
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that are side by side*/
+            .main {
+                flex: 70%;
+                background-color: #ffffff;
+                padding: 20px;
+            }
+
+            /* Left comlumn */
+            .side {
+                flex: 30%;
+                background-color: rgb(189, 129, 129);
+                padding: 20px;
+            }
+
             footer {
                 background-color: #666;
                 text-align: center;
@@ -74,12 +94,27 @@
             <a class="active" href="compose.html">Compose</a>
             <a href="about.html">About</a>
         </div>
-        <textarea rows="30" cols="125" required>
+
+        <!-- The flex grid content-->
+        <div class="row">
+            <div class="main">
+                <textarea rows="30" cols="12" required>
             Write your blog here...
             </textarea>
-        <form action="home.html">
-            <input type="submit" value="submit">
-        </form>
+                <form action="home.html">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <div class="side">
+                <h3>Categories</h3>
+                <h5>Pick one</h5>
+                <ul>
+                    <li>Hiphop</li>
+                    <li>Kwaito</li>
+                    <li>Kenyan</li>
+                </ul>
+            </div>
+        </div>
         <footer>
             <p>Footer</p>
         </footer>
