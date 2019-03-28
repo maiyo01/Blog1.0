@@ -11,10 +11,11 @@
             * {
                 box-sizing: border-box;
             }
+
             /* Style the body */
-            body{
+            body {
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                margin: 0;   
+                margin: 0;
             }
 
             /* Header style*/
@@ -28,13 +29,13 @@
             }
 
             /* Style of the navigation bar */
-            .navbar{
+            .navbar {
                 display: flex;
                 background-color: #333;
             }
 
             /* Style the navigation bar links*/
-            .navbar a{
+            .navbar a {
                 color: white;
                 padding: 14px 20px;
                 text-decoration: none;
@@ -43,39 +44,40 @@
             }
 
             /* Style for active link */
-            .navbar a.active{
+            .navbar a.active {
                 background-color: rgb(153, 31, 31);
-                color:black;
+                color: black;
             }
+
             /* Change color on hover*/
-            .navbar a:hover:not(.active){
+            .navbar a:hover:not(.active) {
                 background-color: #ddd;
                 color: black;
             }
 
             /*Column container*/
-            .row{
+            .row {
                 display: flex;
                 flex-wrap: wrap;
             }
 
             /* Create two unequal columns that sits next to each other*/
             /* Right column*/
-            .main{
-                flex:70%;
+            .main {
+                flex: 70%;
                 background-color: #ffffff;
                 padding: 20px;
             }
 
             /*left column*/
-            .side{
-                flex:30%;
+            .side {
+                flex: 30%;
                 background-color: rgb(189, 129, 129);
                 padding: 20px;
             }
 
             /* Image for example*/
-            .fakeimg{
+            .fakeimg {
                 background-color: #aaa;
                 width: 100%;
                 padding: 20px;
@@ -90,8 +92,10 @@
             }
 
             /*Responsive to a small screen*/
-            @media screen and (max-width: 700px){
-                .row, .navbar{
+            @media screen and (max-width: 700px) {
+
+                .row,
+                .navbar {
                     flex-direction: column;
                 }
             }
@@ -106,7 +110,7 @@
         <!-- Navigation Bar -->
         <div class="navbar">
             <a class="active" href="home.html">Home</a>
-            <a href="compose.html">Compose</a>
+            <a href="Sign_in.html">Compose</a>
             <a href="about.html">About</a>
         </div>
 
@@ -142,7 +146,7 @@
                     other elements of hip hop
                     culture, including DJing, turntablism, scratching, beatboxing, and instrumental tracks
                 </p>
-                <form action="compose.html">
+                <form action="Sign_in.html">
                     If you would like to submit an article on this blog, click here:
                     <input type="submit" value="Compose">
                 </form>
