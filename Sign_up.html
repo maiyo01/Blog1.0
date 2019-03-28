@@ -20,11 +20,13 @@
 
             /* Header style*/
             header {
+                background-image: url(bimage2.jpg);
+                background-size: cover;
                 background-color: rgb(153, 44, 44);
                 padding: 20px;
                 text-align: center;
                 font-size: 35px;
-                color: white;
+                color: black;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
 
@@ -64,16 +66,21 @@
             /* Create column */
             .main {
                 flex: 100%;
+                background-image: url(bimage1.jpg);
+                background-size: cover;
                 background-color: #ffffff;
                 padding: 20px;
             }
 
             /* Footer */
             footer {
+                background-image: url(bimage2.jpg);
+                background-size: cover;
                 background-color: rgb(153, 44, 44);
                 text-align: center;
                 color: black;
                 padding: 10px;
+                border-top: 5px #333 solid;
             }
         </style>
 
@@ -103,7 +110,7 @@
                     <input type="email" name="email" required><br><br>
                     Password:<br>
                     <input type="password" name="psw" required><br><br>
-                    <input type="submit" value="submit">
+                    <input type="submit" value="submit" onclick="alert('Welcome')">
                 </form>
             </div>
         </div>

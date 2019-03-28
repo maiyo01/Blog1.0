@@ -20,11 +20,13 @@
 
             /* Header style */
             header {
+                background-image: url(bimage2.jpg);
+                background-size: cover;
                 background-color: rgb(153, 44, 44);
                 padding: 20px;
                 text-align: center;
                 font-size: 35px;
-                color: white;
+                color: black;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
 
@@ -64,6 +66,8 @@
             /* Create two unequal columns that are side by side*/
             .main {
                 flex: 70%;
+                background-image: url(bimage1.jpg);
+                background-size: cover;
                 background-color: #ffffff;
                 padding: 20px;
             }
@@ -71,8 +75,11 @@
             /* Left comlumn */
             .side {
                 flex: 30%;
+                background-image: url(bimage1.jpg);
+                background-size: cover;
                 background-color: rgb(189, 129, 129);
                 padding: 20px;
+                border-left: 5px #333 solid;
             }
 
             /* Style of first textarea*/
@@ -98,10 +105,13 @@
             }
 
             footer {
+                background-image: url(bimage2.jpg);
+                background-size: cover;
                 background-color: rgb(153, 44, 44);
                 text-align: center;
                 color: black;
                 padding: 10px;
+                border-top: 5px #333 solid;
             }
         </style>
     </head>
@@ -132,16 +142,15 @@
                     </textarea>
                     </p>
                     <p>Add photo:
-                        <textarea class="textarea1" required>
-
-                    </textarea>
+                        <input type="file" name="myFile">
                     </p>
                     <p>Compose:
                         <textarea class="textarea2">
 
                     </textarea>
                     </p>
-                    <input type="submit" value="submit">
+                    <input type="submit" value="submit" onclick="alert('Thank You')">
+
                 </form>
             </div>
             <div class="side">
